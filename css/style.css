@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url(../images/bg-mobile.svg);
+
+   
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif, 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.logo {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 45px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+
+main {
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;   
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+}
+
+.rgstbtn {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-size: 0.75em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.rgstbtn:hover {
+    background-color:  rgb(238, 135, 238);
+    color: cornsilk;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+    justify-content: space-around;
+}
+
+footer .social p {
+    background-color: hsl(257, 40%, 49%);
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 24px;
+    text-align: center;    
+    color: #fff;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+footer .social p i {
+    color: #fff;
+}
+
+footer .social p:hover {
+    background-color:  rgb(238, 135, 238);
+    color: cornsilk;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+/*============================================================
+ Media Queries
+=========================================================== */
+
+/*--------------- Tablets --------------------*/
+
+@media all and (min-width: 768px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+}
+
+/*--------------- Desktop ---------------------*/
+
+@media all and (min-width: 1200px) {
+    body {
+        background: url(../images/bg-desktop.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+    
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logo h1 {
+        font-size: 3.7em;
+        margin-left: 50px;
+    }
+
+    main {
+        width: 44%;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 70px;    
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.55em;
+    }
+
+    .button {
+        justify-content: flex-start;
+    }
+
+    .rgstbtn {
+        width: 40%;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1em;
+    }
+
+    footer {
+        margin-top: 50px;
+        margin-left: 100px;    
+    }
+    
+    .social {
+        display: flex;
+        margin-left: 80em;
+        width: 10%;
+        justify-content: space-around;   
+    }
+    
+    footer .social p {
+        background-color: hsl(257, 40%, 49%);
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 32px;
+        text-align: center; 
+        color: #fff;
+        font-size: 1.5em;   
+    }
+    footer .social p i {
+        color: #fff;
+    }
+            
+    .attribution {
+        margin-top: 20px;
+        font-size: .875em;
+    } 
+} 
